@@ -1,32 +1,34 @@
 {
-  "expo": {
-    "name": "rn-os-authentication",
-    "slug": "rn-os-authentication",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "rn-os-authentication",
+		"slug": "rn-os-authentication",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.ikeuchiryuto.rn-os-authentication",
+			"infoPlist": {
+				"NSFaceIDUsageDescription": "This app will optionally use Face ID or Touch ID to save login"
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		}
+	}
 }
